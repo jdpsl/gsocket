@@ -5,14 +5,14 @@
 # See https://www.gsocket.io/deploy/ for examples.
 #
 # This script is typically invoked like this as root or non-root user:
-#   $ bash -c "$(curl -fsSL https://gsocket.io/x)"
+#   $ bash -c "$(curl -fsSL https://www.gsocket.io/x)"
 #
 # Connect
-#   $ S=MySecret bash -c "$(curl -fsSL https://gsocket.io/x)""
+#   $ S=MySecret bash -c "$(curl -fsSL https://www.gsocket.io/x)""
 # Pre-set a secret:
-#   $ X=MySecret bash -c "$(curl -fsSL https://gsocket.io/x)"
+#   $ X=MySecret bash -c "$(curl -fsSL https://www.gsocket.io/x)"
 # Uninstall
-#   $ GS_UNDO=1 bash -c" $(curl -fsSL https://gsocket.io/x)"
+#   $ GS_UNDO=1 bash -c" $(curl -fsSL https://www.gsocket.io/x)"
 #
 # Other variables:
 # GS_DEBUG=1
@@ -1639,7 +1639,7 @@ init_vars
 [[ -n "$GS_UNDO" ]] || [[ -n "$GS_CLEAN" ]] || [[ -n "$GS_UNINSTALL" ]] && uninstall
 
 init_setup
-# User supplied install-secret: X=MySecret bash -c "$(curl -fsSL https://gsocket.io/x)"
+# User supplied install-secret: X=MySecret bash -c "$(curl -fsSL https://www.gsocket.io/x)"
 [[ -n "$X" ]] && GS_SECRET_X="$X"
 
 if [[ -z $S ]]; then
